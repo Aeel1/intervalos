@@ -1,0 +1,24 @@
+.wrapper {
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: flex-start;
+}
+
+footer {
+  height: 5rem;
+  background-color: var(--gray-900);
+  color: var(--green-500);
+  align-content: center;
+  text-align: center;
+
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  
+}
