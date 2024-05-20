@@ -105,9 +105,10 @@ export function Form() {
                 <textarea
                   rows="1"
                   cols="10"
-                  value={data.Seg}
+                  value={data.Seg === 'X' ? '' : data.Seg}
                   onChange={(e) => handleInputChange(index, 'Seg', e.target.value)}
                   disabled={data.Seg === 'X'}
+                  className={data.Seg === 'X' ? styles.disabledTextarea : ''}
                   style={{ backgroundColor: data.SegValid ? '#d4edda' : 'white' }}
                 />
               </td>
@@ -115,9 +116,10 @@ export function Form() {
                 <textarea
                   rows="1"
                   cols="10"
-                  value={data.Ter}
+                  value={data.Ter === 'X' ? '' : data.Ter}
                   onChange={(e) => handleInputChange(index, 'Ter', e.target.value)}
                   disabled={data.Ter === 'X'}
+                  className={data.Ter === 'X' ? styles.disabledTextarea : ''}
                   style={{ backgroundColor: data.TerValid ? '#d4edda' : 'white' }}
                 />
               </td>
@@ -125,9 +127,10 @@ export function Form() {
                 <textarea
                   rows="1"
                   cols="10"
-                  value={data.Qua}
+                  value={data.Qua === 'X' ? '' : data.Qua}
                   onChange={(e) => handleInputChange(index, 'Qua', e.target.value)}
                   disabled={data.Qua === 'X'}
+                  className={data.Qua === 'X' ? styles.disabledTextarea : ''}
                   style={{ backgroundColor: data.QuaValid ? '#d4edda' : 'white' }}
                 />
               </td>
@@ -135,9 +138,10 @@ export function Form() {
                 <textarea
                   rows="1"
                   cols="10"
-                  value={data.Qui}
+                  value={data.Qui === 'X' ? '' : data.Qui}
                   onChange={(e) => handleInputChange(index, 'Qui', e.target.value)}
                   disabled={data.Qui === 'X'}
+                  className={data.Qui === 'X' ? styles.disabledTextarea : ''}
                   style={{ backgroundColor: data.QuiValid ? '#d4edda' : 'white' }}
                 />
               </td>
@@ -145,9 +149,10 @@ export function Form() {
                 <textarea
                   rows="1"
                   cols="10"
-                  value={data.Sex}
+                  value={data.Sex === 'X' ? '' : data.Sex}
                   onChange={(e) => handleInputChange(index, 'Sex', e.target.value)}
                   disabled={data.Sex === 'X'}
+                  className={data.Sex === 'X' ? styles.disabledTextarea : ''}
                   style={{ backgroundColor: data.SexValid ? '#d4edda' : 'white' }}
                 />
               </td>
@@ -155,9 +160,10 @@ export function Form() {
                 <textarea
                   rows="1"
                   cols="10"
-                  value={data.Set}
+                  value={data.Set === 'X' ? '' : data.Set}
                   onChange={(e) => handleInputChange(index, 'Set', e.target.value)}
                   disabled={data.Set === 'X'}
+                  className={data.Set === 'X' ? styles.disabledTextarea : ''}
                   style={{ backgroundColor: data.SetValid ? '#d4edda' : 'white' }}
                 />
               </td>
@@ -165,9 +171,10 @@ export function Form() {
                 <textarea
                   rows="1"
                   cols="10"
-                  value={data.Oit}
+                  value={data.Oit === 'X' ? '' : data.Oit}
                   onChange={(e) => handleInputChange(index, 'Oit', e.target.value)}
                   disabled={data.Oit === 'X'}
+                  className={data.Oit === 'X' ? styles.disabledTextarea : ''}
                   style={{ backgroundColor: data.OitValid ? '#d4edda' : 'white' }}
                 />
               </td>

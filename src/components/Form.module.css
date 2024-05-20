@@ -17,3 +17,8 @@ textarea {
 }
 
  
+.disabledTextarea {
+  border: none; /* Cor da borda dos textareas desabilitados */
+  color: transparent; /* Torna o texto invisível */
+  pointer-events: none; /* Desabilita interações com o usuário */
+}
